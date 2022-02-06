@@ -1,0 +1,140 @@
+.contenido {
+  background-color: #282828;
+  padding: 20px;
+}
+
+.card {
+  background-color: #222;
+  color: #aaa;
+}
+
+.card img{
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.cardtwo img {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 30px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.carousel-inner img{
+  margin: 0 auto;
+  height: 400px;
+  max-width: 700px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  margin: 0 auto;
+  max-width: 700px;
+  background-color: rgba(0,0,0,0.8);
+  color: #ccc;
+}
+
+.fa-linkedin-in {
+  color: #4fa9da;
+}
+
+.fa-github {
+  color: #ddd;
+}
+
+nav {
+  max-width: 1200px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+h1 {
+  margin-bottom: 4%;
+  font-size: 80px;
+  font-family: "Brush Script MT", cursive;
+}
+
+h6 {
+  font-size: 40px;
+  font-family: "Brush Script MT", cursive;
+}
+
+h4 {
+  font-family: "Comic Sans MS", cursive;
+  font-size: 60px;
+}
+
+@media (min-width: 601px) {
+.divhome, .divskills, .divhobbies {
+  min-height: 900px;
+  height: 100vh;
+  position: relative;
+}
+
+.home {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.skill, .hobbie {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.divprojects {
+  height: 100vh;
+  line-height: 100vh;
+}
+
+.project {
+  width: 600px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+}
+
+@media (max-width: 600px) {
+  h1 {
+    margin: 0 auto;
+    margin-top: 50%;
+    font-size: 45px;
+  }
+
+  h6 {
+    font-size: 28px;
+  }
+
+  .card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .cardtwo img {
+    margin-top: 20px;
+    width: 90%;
+  }
+
+  .parrafo {
+    font-size: 12px;
+  }
+
+  h4 {
+    font-size: 30px;
+  }
+
+  .divhome, .divprojects {
+    height: 100vh;
+  }
+
+  .home, .skill, .project, .hobbie {
+    margin-top: 40px;
+  }
+}
