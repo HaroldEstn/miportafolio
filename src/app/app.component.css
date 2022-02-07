@@ -23,6 +23,10 @@
   border-radius: 5px;
 }
 
+.carousel {
+  z-index: 0;
+}
+
 .carousel-inner img{
   margin: 0 auto;
   height: 400px;
@@ -68,37 +72,38 @@ h4 {
   font-size: 60px;
 }
 
+.divhome, .divskills, .divprojects, .divhobbies {
+  min-height: 100vh;
+}
+
 @media (min-width: 601px) {
-.divhome, .divskills, .divhobbies {
-  min-height: 900px;
-  height: 100vh;
-  position: relative;
-}
+  .divhome, .divskills, .divhobbies {
+    position: relative;
+  }
 
-.home {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+  .home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-.skill, .hobbie {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-}
+  .skill, .hobbie {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
 
-.divprojects {
-  height: 100vh;
-  line-height: 100vh;
-}
+  .divprojects {
+    line-height: 100vh;
+  }
 
-.project {
-  width: 600px;
-  display: inline-block;
-  vertical-align: middle;
-  line-height: normal;
-}
+  .project {
+    width: 600px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+  }
 }
 
 @media (max-width: 600px) {
@@ -130,11 +135,8 @@ h4 {
     font-size: 30px;
   }
 
-  .divhome, .divprojects {
-    height: 100vh;
-  }
-
   .home, .skill, .project, .hobbie {
     margin-top: 40px;
   }
 }
+
