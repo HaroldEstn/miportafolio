@@ -1,0 +1,45 @@
+.divprojects {
+  min-height: 89vh;
+}
+
+.project {
+  transform:translate(0, 30%);
+}
+
+.carousel-inner img {
+  margin: 0 auto;
+  max-height: 400px;
+  max-width: 700px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  margin: 0 auto;
+  max-width: 700px;
+  background-color: rgba(0,0,0,0.8);
+  color: #ccc;
+}
+
+h4 {
+  font-family: "Comic Sans MS", cursive;
+  font-size: 60px;
+}
+
+@media (max-width: 600px) {
+  .divprojects {
+    min-height: 85vh;
+  }
+
+  h4 {
+    font-size: 40px
+  }
+
+  .project {
+    padding: 10px;
+    transform:translate(0,50%);
+  }
+
+  .carousel-inner {
+    height: 200px;
+  }
+}

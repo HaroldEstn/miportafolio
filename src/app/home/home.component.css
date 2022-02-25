@@ -1,0 +1,43 @@
+.conhome {
+  min-height: 89vh;
+}
+
+.home {
+  transform:translate(0, 60%);
+}
+
+h1 {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 100px;
+}
+
+h6, p {
+  font-family: 'Courier New', monospace;
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .conhome {
+    min-height: 85vh; 
+  }
+
+  .home {
+    transform:translate(0, 65%);
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h6 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
